@@ -1,0 +1,24 @@
+nav {
+    background: #2d2e2e;
+    height:100%;
+    float: left;
+    position: fixed;
+    width: 70px;
+
+    ul{
+        list-style-type:none;
+        padding: 0;
+        margin:0;
+
+        li {
+           a{
+               color:#fff;
+               padding: 20px;
+               display: block;
+           }
+           .activated{
+               background-color: #00a8ff
+           }
+        }
+    }
+}

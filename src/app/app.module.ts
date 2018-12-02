@@ -11,6 +11,9 @@ import {HttpClientModule} from '@angular/common/http';
 import { BarchartComponent } from './barchart/barchart.component'
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {NgxChartsModule} from '@swimlane/ngx-charts';
+import { ChartsComponent } from './charts/charts.component';
+import { PieChartComponent } from './pie-chart/pie-chart.component';
+import { LineChartComponent } from './line-chart/line-chart.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,6 +22,9 @@ import {NgxChartsModule} from '@swimlane/ngx-charts';
     UsersComponent,
     DetailsComponent,
     BarchartComponent,
+    ChartsComponent,
+    PieChartComponent,
+    LineChartComponent,
   ],
   imports: [
     BrowserModule,

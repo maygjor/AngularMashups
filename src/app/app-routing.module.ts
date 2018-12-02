@@ -3,7 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import {UsersComponent} from './users/users.component';
 import {DetailsComponent} from './details/details.component';
 import {PostsComponent} from './posts/posts.component';
-import {BarchartComponent} from './barchart/barchart.component'
+import {ChartsComponent} from './charts/charts.component'
 const routes: Routes = [
   {
     path:'',
@@ -18,8 +18,8 @@ const routes: Routes = [
     component:PostsComponent
   },
   {
-    path:'barchart',
-    component:BarchartComponent
+    path:'charts',
+    component:ChartsComponent
   }
 ];
 

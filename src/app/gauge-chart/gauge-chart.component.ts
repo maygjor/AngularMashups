@@ -1,12 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { single ,multi} from '../data';
-
 @Component({
-  selector: 'line-chart',
-  templateUrl: './line-chart.component.html',
-  styleUrls: ['./line-chart.component.scss']
+  selector: 'gauge-chart',
+  templateUrl: './gauge-chart.component.html',
+  styleUrls: ['./gauge-chart.component.scss']
 })
-export class LineChartComponent{
+export class GaugeChartComponent{
   single: any[];
   multi: any[];
 
@@ -22,12 +21,13 @@ export class LineChartComponent{
   showYAxisLabel = true;
   yAxisLabel = 'Population';
 
+
   colorScheme = {
-    domain: ['#5AA454', 'orange', 'purple', '#AAAAAA']
+    domain: ['#5AA454', '#A19A28', 'red', '#AAAAAA']
   };
 
   constructor() {
-    Object.assign(this, { multi })
+    Object.assign(this, { single })
   }
 
   onSelect(event) {

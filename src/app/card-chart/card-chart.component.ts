@@ -1,12 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import { single ,multi} from '../data';
-
+import { single } from '../data';
 @Component({
-  selector: 'line-chart',
-  templateUrl: './line-chart.component.html',
-  styleUrls: ['./line-chart.component.scss']
+  selector: 'card-chart',
+  templateUrl: './card-chart.component.html',
+  styleUrls: ['./card-chart.component.scss']
 })
-export class LineChartComponent{
+export class CardChartComponent{
   single: any[];
   multi: any[];
 
@@ -23,11 +22,11 @@ export class LineChartComponent{
   yAxisLabel = 'Population';
 
   colorScheme = {
-    domain: ['#5AA454', 'orange', 'purple', '#AAAAAA']
+    domain: ['#5AA489', '#A1dA28', '#C7242C', '#AAAAAA']
   };
 
   constructor() {
-    Object.assign(this, { multi })
+    Object.assign(this, { single })
   }
 
   onSelect(event) {

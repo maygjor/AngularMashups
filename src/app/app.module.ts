@@ -14,6 +14,10 @@ import {NgxChartsModule} from '@swimlane/ngx-charts';
 import { ChartsComponent } from './charts/charts.component';
 import { PieChartComponent } from './pie-chart/pie-chart.component';
 import { LineChartComponent } from './line-chart/line-chart.component';
+import { BubbleChartComponent } from './bubble-chart/bubble-chart.component';
+import { GaugeChartComponent } from './gauge-chart/gauge-chart.component';
+import { TreeChartComponent } from './tree-chart/tree-chart.component';
+import { CardChartComponent } from './card-chart/card-chart.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,6 +29,10 @@ import { LineChartComponent } from './line-chart/line-chart.component';
     ChartsComponent,
     PieChartComponent,
     LineChartComponent,
+    BubbleChartComponent,
+    GaugeChartComponent,
+    TreeChartComponent,
+    CardChartComponent,
   ],
   imports: [
     BrowserModule,
